@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "description": "Peer-to-peer file and message sharing. No servers, no accounts, no setup.",
+    "homepage": "https://github.com/osmanahmadxai/beemr",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/osmanahmadxai/beemr/releases/download/v0.2.0/beemr-windows-x86_64.exe#/beemr.exe",
+            "hash": "be2b3055a3f0e51126ea84125458444f1c1bd6954aa83de895dee2b26b0e5fc5"
+        }
+    },
+    "bin": "beemr.exe",
+    "checkver": {
+        "github": "https://github.com/osmanahmadxai/beemr"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/osmanahmadxai/beemr/releases/download/v$version/beemr-windows-x86_64.exe#/beemr.exe"
+            }
+        }
+    }
+}
